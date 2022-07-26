@@ -1,0 +1,55 @@
+/*HEADER / MENU*/
+
+header{
+    background-color: $secondary;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    padding: $spacing-medium;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1.6em;
+
+    .redes-socialesUno{
+        grid-column: 10 / 13;
+    }
+    .navegation{
+        grid-column: 4 / 10;
+    }
+    .header__logo{
+        grid-column: 2 / 3;
+    }
+    
+    .header__img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+    .menu {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+
+        &__link{
+            border: 2px solid  $secondary;
+            transition: 1s;
+            padding: 1.2rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: $small;
+            font-family: $font-secondary;
+            font-weight: lighter;
+            color: $alternativo;
+        }
+        &__link:hover{  
+            border-color: $alternativo;
+            background-color: $primary;
+        }
+    }
+
+    .redes-socialesUno {  
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+}

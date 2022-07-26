@@ -1,0 +1,45 @@
+/*FOOTER / PIE DE PAGINA*/
+footer {
+    display: grid;
+    background-image: linear-gradient($secondary, $primary); 
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+
+    .redes-socialesDos {
+        grid-column: 1 / 2;
+        grid-row: 2 /3; 
+        display: flex;
+        justify-content: center;
+        gap: 8px; 
+    }
+    
+    .contenedoruno {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; 
+
+        &__seccion{
+            color: white;
+            display: flex;
+            justify-content: center; 
+            font-size: 15px;
+            font-family: $font-principal;
+            font-weight: bolder;}
+    }
+    
+    .contenedordos {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4; 
+
+        &__copy {
+            color: $alternativo;
+            display: flex;
+            justify-content: center; 
+            font-size: 10px;
+            font-family: $font-secondary;}
+    
+    }
+        
+    .redes-sociales img {
+        padding: $spacing-xsmall; }
+}

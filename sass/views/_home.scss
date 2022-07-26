@@ -1,0 +1,28 @@
+/*NOSOTROS*/
+    
+.soyYo{  
+
+    .imgYo{ 
+        display: flex;
+        gap: 25px;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 100px;
+        margin-top: 10px;
+        padding-bottom: 50px;
+
+        .soy__yo{  
+            width: 350px;
+            height: 450px;
+            padding-left: 180px;
+            }
+    }
+
+    .textoImgYo {
+        font-size: $xsmall;
+        text-align: left;
+        font-style: italic;
+        font-family: $font-principal;
+        align-items: center;
+    }
+}
